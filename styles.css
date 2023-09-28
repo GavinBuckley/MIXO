@@ -15,7 +15,7 @@ html {
 .title {
 	font-family: rubik;
 	font-size: 30px;
-	color: #402E32;
+	font-weight: bold;
 }
 
 .mainContainer {
@@ -83,10 +83,19 @@ html {
 	display: flex;
 	font-family: rubik;
 	font-size: 18px;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
 }
 
-
+.name {
+	display: flex;
+	font-family: rubik;
+	font-weight: bold;
+	font-size: 20px;
+	justify-content: center;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
