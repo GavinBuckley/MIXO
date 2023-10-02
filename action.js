@@ -44,7 +44,6 @@ function start() {
 
 	if (magic.checked && randomChance(.25)) {
 
-		debug("Mixo activated! - Mixers")
 		randomMixerElement = randomFromArray(magicArray)
 	} else {
 		randomMixerElement = randomFromArray(mixers)
@@ -52,7 +51,6 @@ function start() {
 
 	if (magic.checked && randomChance(.25)) {
 
-		debug("Mixo activated! - Splash")
 		randomSplashElement = randomFromArray(magicArray)
 	} else {
 		randomSplashElement = randomFromArray(splash)
@@ -60,7 +58,6 @@ function start() {
 
 	if (magic.checked && randomChance(.25)) {
 
-		debug("Mixo activated! - Also")
 		randomAdditionElement = randomFromArray(magicArray)
 	} else {
 		randomAdditionElement = randomFromArray(also)
@@ -85,6 +82,12 @@ function start() {
 	let firstName = randomFromArray(firstname)
 	let lastName = randomFromArray(lastname)
 	name.innerText = "The " + firstName + " " + lastName
+
+	var quipwrapper = document.getElementById("mixoWrapper")
+	quipwrapper.style.display = "flex"
+
+	var quip = document.getElementById("quip")
+	quip.innerText = randomFromArray(quips)
 
 }
 

@@ -299,6 +299,7 @@ const firstname = [
 	"Accidental",
 	"Malicious",
 	"Lobster",
+	"Mixo's",
 
 ]
 
@@ -354,5 +355,34 @@ const lastname = [
 	"Taxpayer",
 	"Lobster",
 	"Machine",
+
+]
+
+const quips = [
+
+	"Hey, that looks pretty good to me.",
+	"Not my best work, but whatever.",
+	"It was my mother's recipe.",
+	"Enjoy, I guess.",
+	"Time to party, MIXO style!",
+	"You're welcome, idiot.",
+	"The secret ingredient is hate.",
+	"Drink it. I dare you.",
+	"How many ounces are in a liter?",
+	"I'm bored.",
+	"They should make Top Chef, but for bartending. Call it Top Bar.",
+	"Mixology isn't a real profession.",
+	"Your liver will thank me.",
+	"Time to meet your maker.",
+	"Alcoholism, meet my good friend, alcohol.",
+	"Your liver has met its match.",
+	"I probably wouldn't drink that.",
+	"I'm 97.3352% sure you'll like this",
+	"This was Coolio's favorite drink.",
+	"There might be some broken glass in there.",
+	"If you're a cop, you have to tell me.",
+	"Science says you'll like this. Or else.",
+	"Don't drink this one if you're allergic to peanuts."
+
 
 ]

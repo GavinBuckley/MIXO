@@ -1,122 +1,188 @@
 html {
-	background-color: #402E32;
+    background-color: #402E32;
 }
 
 
 .header {
-	display: flex;
-	height: 50px;
-	background-color:#F2D0A4;
-	border-radius: 5px;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    height: 50px;
+    background-color: #F2D0A4;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-	font-family: rubik;
-	font-size: 30px;
-	font-weight: bold;
+    font-family: rubik;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .mainContainer {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .leftContainer {
-	flex: 1;
-	margin-right: 5px;
-	margin-top: 10px;
-	height: 500px;
-	background-color:#F2D0A4;
-	border-radius: 5px;
+    flex: 1;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 500px;
+    background-color: #F2D0A4;
+    border-radius: 5px;
 }
 
 .rightContainer {
-	display: flex;
-	position: relative;
-	flex: 1;
-	margin-left: 5px;
-	margin-top: 10px;
-	height: 500px;
-	background-color:#F2D0A4;
-	border-radius: 5px;
-	flex-direction: column;
+    display: flex;
+    position: relative;
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 500px;
+    background-color: #F2D0A4;
+    border-radius: 5px;
+    flex-direction: column;
 }
 
 .buttonWrapper {
-	display: flex;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
 }
 
 .start {
-	width: 100%;
-	height: 50px;
-	border-radius: 5px;
-	border: none;
-	margin: 10px 10px 10px 10px;
-	font-family: rubik;
-	font-size: 18px;
-	background-color: #59CD90;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+    font-family: rubik;
+    font-size: 18px;
+    background-color: #59CD90;
 }
 
-.start:hover {
-	background-color: #548F6D;
-}
+    .start:hover {
+        background-color: #548F6D;
+    }
 
 .containerTitle {
-	display: flex;
-	font-family: rubik;
-	font-size: 18px;
-	justify-content: center;
-	margin-top: 10px;
+    display: flex;
+    font-family: rubik;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .categories {
-	font-family: rubik;
+    font-family: rubik;
 }
 
 .output {
-	display: flex;
-	font-family: rubik;
-	font-size: 18px;
-	justify-content: flex-start;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
+    display: flex;
+    font-family: rubik;
+    font-size: 18px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .name {
-	display: flex;
-	font-family: rubik;
-	font-weight: bold;
-	font-size: 20px;
-	justify-content: center;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
+    display: flex;
+    font-family: rubik;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
+.mixoWrapper {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+}
+
+.mixoWrapper2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mixoImage {
+    width: 100px;
+    height: 100px;
+    padding: 20px 10px 10px 10px;
+}
+
+
+.mixoName {
+    display: flex;
+    font-family: rubik;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.quip {
+    display: flex;
+    font-family: rubik;
+    font-size: 18px;
+    justify-content: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
 
-	html {
-		height: 100%;
-	}
-	.mainContainer {
-		flex-direction: column;
-	}
+    html {
+        height: 100%;
+    }
 
-	.rightContainer {
-		margin-left: 0px;
-		flex: none;
-		height: 250px;
-	}
-	.leftContainer {
-		display: block;
-		flex: none;
-		margin-right: 0px;
-	}
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .rightContainer {
+        margin-left: 0px;
+        flex: none;
+        height: 250px;
+    }
+
+    .leftContainer {
+        display: block;
+        flex: none;
+        margin-right: 0px;
+    }
 }
