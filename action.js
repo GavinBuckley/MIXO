@@ -1,12 +1,9 @@
 
 function start() {
-	console.log("started!")
 
+	// Set the amount of checkboxes to go through
 	const optionAmount = 6
-	const chance3 = 0.25
-	const chance4 = 0.25
-	const chance5 = 0.25
- 
+
 	// Check to see if the textContainer already exists
 	var element = document.getElementById('textContainer');
 	if (element !== null) {
@@ -19,7 +16,10 @@ function start() {
 	document.getElementById("leftContainer").appendChild(textContainer)
 
 	var name = document.getElementById("name");
+	var magic = document.getElementById("option6");
+	var magicArray = options.option6
 
+	// Array to be populated by random choices
 	const randomArray = []
 
 	// Check to see if each checkbox is checked and add a random element from that array to the array
@@ -37,28 +37,48 @@ function start() {
 	}
 
 	let randomElement = randomFromArray(randomArray)
-	let randomMixerElement = randomFromArray(mixers)
-	let randomSplashElement = randomFromArray(splash)
-	let randomAdditionElement = randomFromArray(also)
-	let randomPrepElement = randomFromArray(prepared)
+	var randomMixerElement = ""
+	var randomSplashElement = ""
+	var randomAdditionElement = ""
+	var randomPrepElement = randomFromArray(prepared)
 
-	createText(generateRandomNumber() + "oz " + randomElement)
-	createText(generateRandomNumber() + "oz " + randomMixerElement)
-	var output3Ready = generateRandomNumber() + "oz " + randomAdditionElement
+	if (magic.checked && randomChance(.25)) {
+
+		debug("Mixo activated! - Mixers")
+		randomMixerElement = randomFromArray(magicArray)
+	} else {
+		randomMixerElement = randomFromArray(mixers)
+	}
+
+	if (magic.checked && randomChance(.25)) {
+
+		debug("Mixo activated! - Splash")
+		randomSplashElement = randomFromArray(magicArray)
+	} else {
+		randomSplashElement = randomFromArray(splash)
+	}
+
+	if (magic.checked && randomChance(.25)) {
+
+		debug("Mixo activated! - Also")
+		randomAdditionElement = randomFromArray(magicArray)
+	} else {
+		randomAdditionElement = randomFromArray(also)
+	}
+
+	createText(advantage() + "oz " + randomElement)
+	createText(randomFloat(.1, 3, 1) + "oz " + randomMixerElement)
+	var output3Ready = randomFloat(.1, 3, 1) + "oz " + randomAdditionElement
 	var output4Ready = "A splash of " + randomSplashElement
 	var output5Ready = randomPrepElement
 
-	let decider3 = Math.random()
-	let decider4 = Math.random()
-	let decider5 = Math.random()
-
-	if (decider3 <= chance3) {
+	if (randomChance(.25)) {
 		createText(output3Ready)
 	}
-	if (decider4 <= chance4) {
+	if (randomChance(.25)) {
 		createText(output4Ready)
 	}
-	if (decider5 <= chance5) {
+	if (randomChance(.25)) {
 		createText(output5Ready)
 	}
 
@@ -68,19 +88,18 @@ function start() {
 
 }
 
-function generateRandomNumber() {
-	// Generate a random number between 0 (inclusive) and 1 (exclusive)
-	const randomNumber = Math.random();
-
-	// Scale the random number to be between 0.1 and 3
-	const scaledRandom = randomNumber * 2.9 + 0.1;
-
-	// Round the scaled random number to the tenths place
-	const roundedRandom = Math.round(scaledRandom * 10) / 10;
-
-	return roundedRandom;
+// Generate two numbers between .1 and 3 and take the higher number
+function advantage() {
+	let roll1 = randomFloat(.1, 3, 1)
+	let roll2 = randomFloat(.1, 3, 1)
+	if (roll1 > roll2) {
+		return roll1
+	} else {
+		return roll2
+	}
 }
 
+// Create a text node to be added to the text container
 function createText(text) {
 	var para = document.createElement("p");
 	var textNode = document.createTextNode(text);

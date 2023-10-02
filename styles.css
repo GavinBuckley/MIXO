@@ -99,3 +99,24 @@ html {
 	margin-right: 10px;
 	margin-left: 10px;
 }
+
+@media screen and (max-width: 600px) {
+
+	html {
+		height: 100%;
+	}
+	.mainContainer {
+		flex-direction: column;
+	}
+
+	.rightContainer {
+		margin-left: 0px;
+		flex: none;
+		height: 250px;
+	}
+	.leftContainer {
+		display: block;
+		flex: none;
+		margin-right: 0px;
+	}
+}
