@@ -105,6 +105,7 @@ options.option6 = [
 	"Mouthwash",
 	"Miller Lite",
 	"Bud Lite",
+	"Liquid Metal",
 
 ]
 
@@ -300,6 +301,40 @@ const firstname = [
 	"Malicious",
 	"Lobster",
 	"Mixo's",
+	"Instant",
+	"Explosive",
+	"Liver-punching",
+	"Backwards",
+	"Upside Down",
+	"Painful",
+	"Alcohol",
+	"Adam Sandler",
+	"Sourdough",
+	"Wasteland",
+	"Space",
+	"Devil's",
+	"Imperceptible",
+	"Impossible",
+	"Non-Euclidean",
+	"Four Dimensional",
+	"Wailing",
+	"Long",
+	"Short",
+	"Wide",
+	"Screwdriver",
+	"Horrifying",
+	"Honeymoon",
+	"Heartfelt",
+	"Toxic",
+	"Quantum",
+	"Classical",
+	"Rustic",
+	"Super",
+	"Lackluster",
+	"Fermented",
+	"Incomplete",
+
+
 
 ]
 
@@ -355,6 +390,19 @@ const lastname = [
 	"Taxpayer",
 	"Lobster",
 	"Machine",
+	"Gravy",
+	"Christmas",
+	"Drink",
+	"Handshake",
+	"Probe",
+	"Hazard",
+	"Funeral",
+	"Swing",
+	"Club",
+	"Linebacker",
+	"Sludge",
+
+
 
 ]
 
@@ -364,7 +412,7 @@ const quips = [
 	"Not my best work, but whatever.",
 	"It was my mother's recipe.",
 	"Enjoy, I guess.",
-	"Time to party, MIXO style!",
+	"Time to party.",
 	"You're welcome, idiot.",
 	"The secret ingredient is hate.",
 	"Drink it. I dare you.",
@@ -382,7 +430,26 @@ const quips = [
 	"There might be some broken glass in there.",
 	"If you're a cop, you have to tell me.",
 	"Science says you'll like this. Or else.",
-	"Don't drink this one if you're allergic to peanuts."
+	"Don't drink this one if you're allergic to peanuts.",
+	"Try not to think too much about what's in it.",
+	"This is a drink, that's all I can say.",
+	"Instant classic.",
+	"Do you have a life insurance policy? Asking for a friend.",
+	"It's ok, not great.",
+	"I'll give you five bucks to drink this.",
+	"It's probably fine.",
+	"Don't let looks deceive you. It's probably fine.",
+	"It would be a crime NOT to drink this.",
+	"I plead the fifth.",
+	"Bottoms up.",
+	"Smells like home cookin'",
+	"This is a crime against taste buds.",
+	"I'm actually pretty proud of this one.",
+	"The less you know, the better",
+	"I'm getting really tired of making drinks.",
+	"I'm just making things up as I go along here.",
+
+
 
 
 ]

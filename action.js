@@ -1,8 +1,44 @@
+// Set the amount of checkboxes to go through
+const optionAmount = 6
+
+window.onload = function () {
+
+	// Check to see if key exists
+	if (!(sessionStorage.hasOwnProperty("checkboxes"))) {
+		let storageArray = { option1: true, option2: true, option3: true, option4: true, option5: true, option6: false }
+		sessionStorage.setItem("checkboxes", JSON.stringify(storageArray))
+
+		// Set default options
+		for (let i = 1; i <= optionAmount; i++) {
+
+			let temp = "option" + i
+			let currentOption = document.getElementById(temp);
+
+			if (temp != "option6") {
+
+				currentOption.checked = true
+			} else {
+
+				currentOption.checked = false
+			}
+		}
+
+	} else {
+		// Parse key and set options accordingly
+		var stringData = sessionStorage.getItem("checkboxes")
+		var obj = JSON.parse(stringData);
+
+		for (let i = 1; i <= optionAmount; i++) {
+			let temp = "option" + i
+			let currentOption = document.getElementById(temp);
+			if (obj[temp] == true) {
+				currentOption.checked = true
+			}
+		}
+	}
+};
 
 function start() {
-
-	// Set the amount of checkboxes to go through
-	const optionAmount = 6
 
 	// Check to see if the textContainer already exists
 	var element = document.getElementById('textContainer');
@@ -109,4 +145,21 @@ function createText(text) {
 	para.className = "output"
 	para.appendChild(textNode);
 	document.getElementById("textContainer").appendChild(para)
+}
+
+function check(option) {
+	debug(option)
+	var stringData = sessionStorage.getItem("checkboxes")
+	var obj = JSON.parse(stringData);
+
+	let currentOption = document.getElementById(option);
+	if (currentOption.checked) {
+
+		obj[option]= true
+	} else {
+		obj[option] = false
+	}
+
+	sessionStorage.setItem("checkboxes", JSON.stringify(obj))
+
 }
