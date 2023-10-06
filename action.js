@@ -39,6 +39,9 @@ window.onload = function () {
 };
 
 function start() {
+	var errorWrapper = document.getElementById('errorWrapper');
+	errorWrapper.style.display = "none"
+
 
 	// Check to see if the textContainer already exists
 	var element = document.getElementById('textContainer');
@@ -53,7 +56,10 @@ function start() {
 
 	var name = document.getElementById("name");
 	var magic = document.getElementById("option6");
+	var mixoWrapper = document.getElementById("mixoWrapper")
 	var magicArray = options.option6
+	let optionsCheck = 0
+
 
 	// Array to be populated by random choices
 	const randomArray = []
@@ -64,12 +70,21 @@ function start() {
 		let currentOption = document.getElementById(temp);
 		if (currentOption.checked) {
 
+			optionsCheck++
 			let currentArray = options[temp];
 			let currentIndex = Math.floor(Math.random() * currentArray.length);
 			let currentElement = currentArray[currentIndex];
 			randomArray.push(currentElement)
 
 		}
+	}
+
+	if (optionsCheck == 0) {
+		debug("nothing is selected")
+		errorWrapper.style.display = "flex"
+		mixoWrapper.style.display = "none"
+		name.innerText = ""
+		return
 	}
 
 	let randomElement = randomFromArray(randomArray)
@@ -119,8 +134,7 @@ function start() {
 	let lastName = randomFromArray(lastname)
 	name.innerText = "The " + firstName + " " + lastName
 
-	var quipwrapper = document.getElementById("mixoWrapper")
-	quipwrapper.style.display = "flex"
+	mixoWrapper.style.display = "flex"
 
 	var quip = document.getElementById("quip")
 	quip.innerText = randomFromArray(quips)
