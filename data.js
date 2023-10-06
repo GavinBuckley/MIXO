@@ -22,14 +22,14 @@ options.option2 = [
 	"Knob Creek",
 	"Four Roses",
 	"Glenlivet",
-	"Seagram’s 7 Crown",
+	"Seagram's 7 Crown",
 	"Woodford Reserve",
 	"Johnnie Walker Black Label",
 	"Johnnie Walker Red Label",
 	"Evan Williams",
 	"Bulleit",
 	"Wild Turkey",
-	"Maker’s Mark",
+	"Maker's Mark",
 	"Jameson",
 	"Jim Beam",
 	"Jack Daniel’s",
@@ -60,7 +60,7 @@ options.option4 = [
 
 	"Bacardi",
 	"Captain Morgan",
-	"McDowell’s",
+	"McDowell's",
 	"Malibu",
 
 ]
@@ -106,20 +106,6 @@ options.option6 = [
 	"Miller Lite",
 	"Bud Lite",
 	"Liquid Metal",
-
-]
-
-options.option7 = [
-
-	"seventh one",
-	"seventh two"
-
-]
-
-options.option8 = [
-
-	"eighth one",
-	"eighth two"
 
 ]
 
@@ -448,8 +434,5 @@ const quips = [
 	"The less you know, the better",
 	"I'm getting really tired of making drinks.",
 	"I'm just making things up as I go along here.",
-
-
-
 
 ]
