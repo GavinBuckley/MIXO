@@ -143,8 +143,8 @@ function start() {
 
 // Generate two numbers between .1 and 3 and take the higher number
 function advantage() {
-	let roll1 = randomFloat(.1, 3, 1)
-	let roll2 = randomFloat(.1, 3, 1)
+	let roll1 = randomFloat(1.5, 3, 1)
+	let roll2 = randomFloat(1.5, 3, 1)
 	if (roll1 > roll2) {
 		return roll1
 	} else {

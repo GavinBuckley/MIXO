@@ -286,7 +286,7 @@ const firstname = [
 	"Accidental",
 	"Malicious",
 	"Lobster",
-	"Mixo's",
+	"Marinated",
 	"Instant",
 	"Explosive",
 	"Liver-punching",
@@ -388,8 +388,6 @@ const lastname = [
 	"Linebacker",
 	"Sludge",
 
-
-
 ]
 
 const quips = [
@@ -434,5 +432,6 @@ const quips = [
 	"The less you know, the better",
 	"I'm getting really tired of making drinks.",
 	"I'm just making things up as I go along here.",
+	"I'm running out of ideas.",
 
 ]
