@@ -32,7 +32,7 @@ options.option2 = [
 	"Maker's Mark",
 	"Jameson",
 	"Jim Beam",
-	"Jack Daniel’s",
+	"Jack Daniel's",
 	"Fireball",
 	"Crown Royal",
 	"Buffalo Trace",
@@ -106,6 +106,9 @@ options.option6 = [
 	"Miller Lite",
 	"Bud Lite",
 	"Liquid Metal",
+	"Mountain Dew",
+	"Salt Water",
+	""
 
 ]
 
@@ -319,8 +322,9 @@ const firstname = [
 	"Lackluster",
 	"Fermented",
 	"Incomplete",
-
-
+	"Emergency",
+	"Wimpy",
+	"Thinking Man's",
 
 ]
 
@@ -330,7 +334,7 @@ const lastname = [
 	"Tourniquet",
 	"Nipple-Twister",
 	"Accident",
-	"Explosive",
+	"Explosion",
 	"Courthouse",
 	"Steak",
 	"Politician",
@@ -387,6 +391,9 @@ const lastname = [
 	"Club",
 	"Linebacker",
 	"Sludge",
+	"Exit",
+	"Solution",
+	"Sucker Punch",
 
 ]
 
@@ -425,6 +432,7 @@ const quips = [
 	"Don't let looks deceive you. It's probably fine.",
 	"It would be a crime NOT to drink this.",
 	"I plead the fifth.",
+	"It tastes good, I promise.",
 	"Bottoms up.",
 	"Smells like home cookin'",
 	"This is a crime against taste buds.",
@@ -433,5 +441,11 @@ const quips = [
 	"I'm getting really tired of making drinks.",
 	"I'm just making things up as I go along here.",
 	"I'm running out of ideas.",
+	"9 out of 10 doctors reccomend you to drink this and stop asking quesitons.",
+	"Drink this, just not too much of it.",
+	"This is safe to drink.",
+	"I'm so sick of coming up with this stuff.",
+	"This recipe was passed down from my Motherboard to me.",
+	"Don't worry, the EMT's are on their way. Probably.",
 
 ]
