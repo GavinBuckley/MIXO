@@ -393,7 +393,6 @@ const lastname = [
 	"Sludge",
 	"Exit",
 	"Solution",
-	"Sucker Punch",
 
 ]
 
@@ -416,7 +415,7 @@ const quips = [
 	"Alcoholism, meet my good friend, alcohol.",
 	"Your liver has met its match.",
 	"I probably wouldn't drink that.",
-	"I'm 97.3352% sure you'll like this",
+	"I'm 97.3352% sure you'll like this.",
 	"This was Coolio's favorite drink.",
 	"There might be some broken glass in there.",
 	"If you're a cop, you have to tell me.",
@@ -434,10 +433,10 @@ const quips = [
 	"I plead the fifth.",
 	"It tastes good, I promise.",
 	"Bottoms up.",
-	"Smells like home cookin'",
+	"Smells like home cookin'.",
 	"This is a crime against taste buds.",
 	"I'm actually pretty proud of this one.",
-	"The less you know, the better",
+	"The less you know, the better.",
 	"I'm getting really tired of making drinks.",
 	"I'm just making things up as I go along here.",
 	"I'm running out of ideas.",
